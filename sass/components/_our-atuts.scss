@@ -1,0 +1,40 @@
+.our-atuts__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    display: inline;
+  }
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__icon {
+    background-color: &seventh-color;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding: 25px 102px;
+  }
+  &__heading {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    display: flex;
+    color: $fourth-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    width: 270px;
+  }
+}

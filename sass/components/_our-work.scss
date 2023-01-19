@@ -1,0 +1,44 @@
+.our-work {
+  background-color: $ninght-color;
+
+  &__heading {
+    color: $first-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: -94px;
+  }
+  &__list {
+    list-style-type: none;
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  &__item {
+    position: relative;
+    display: block;
+  }
+  &__image {
+    display: block;
+  }
+
+  &__label {
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    padding: 27px 0;
+    color: $tenth-color;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}
