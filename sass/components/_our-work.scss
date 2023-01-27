@@ -1,6 +1,5 @@
 .our-work {
-  background-color: $ninght-color;
-
+    margin-top: -94px;
   &__heading {
     color: $first-color;
     font-weight: 700;
@@ -9,28 +8,28 @@
     letter-spacing: 0.03em;
     text-align: center;
     margin-bottom: 50px;
-    margin-top: -94px;
+    
   }
+
   &__list {
     list-style-type: none;
     justify-content: center;
     display: flex;
-    align-items: flex-start;
     gap: 30px;
   }
 
   &__item {
     position: relative;
-    display: block;
   }
+
   &__image {
-    display: block;
+    vertical-align: middle;
   }
 
   &__label {
     position: absolute;
     bottom: 0;
-    width: 370px;
+    width: 100%;
     padding: 27px 0;
     color: $tenth-color;
     font-weight: 700;

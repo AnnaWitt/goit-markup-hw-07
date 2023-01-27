@@ -10,11 +10,13 @@
     letter-spacing: 0.03em;
     margin-bottom: 46px;
   }
+
   &__list {
     list-style-type: none;
     display: flex;
     gap: 30px;
   }
+
   &__item {
     display: inline-block;
     background-color: $tenth-color;

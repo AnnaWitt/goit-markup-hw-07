@@ -17,13 +17,15 @@
     padding-left: 41px;
     padding-right: 41px;
   }
+
   &__hero:focus,
   &__hero:hover,
   &__hero:active {
-    background-color: var(--tenth-color);
+    background-color: $tenth-color;
     color: $second-color;
   }
-  & .button--newsletter-btn {
+
+  &--newsletter-btn {
     width: 200px;
     height: 50px;
     letter-spacing: 0.06em;
@@ -32,13 +34,14 @@
     align-items: center;
     gap: 24px;
   }
-  & .button--modal {
-  margin: 0 auto;
-  width: 200px;
-  height: 50px;
-  padding: 10px 76px;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-}
+
+  &--modal {
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    padding: 10px 76px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+  }
 }

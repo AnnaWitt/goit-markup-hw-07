@@ -5,22 +5,31 @@
   left: 0;
   top: 0;
   position: fixed;
+}
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.4);
+}
 
-  .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 528px;
-    height: 581px;
-    background-color: $tenth-color;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    transform: translate(-50%, -50%) scale(1);
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: ease;
-  }
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  background-color: $tenth-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: translate(-50%, -50%) scale(1);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
+
   &__close-btn {
     position: absolute;
     width: 30px;
@@ -56,6 +65,7 @@
     letter-spacing: 0.03em;
     margin-bottom: 12px;
   }
+
   &__field {
     display: flex;
     flex-direction: column;
@@ -64,6 +74,7 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+
   &__form-label {
     position: relative;
     font-size: 12px;
@@ -72,6 +83,7 @@
     color: $fourth-color;
     margin-bottom: 4px;
   }
+
   &__form-input {
     width: 100%;
     height: 40px;
@@ -83,6 +95,7 @@
     outline: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
   &__icon {
     fill: $first-color;
     width: 18px;
@@ -92,6 +105,7 @@
     left: 15px;
     transform: translateY(-50%);
   }
+
   &__form-label &__icon {
     transition-property: fill;
     transition-duration: 250ms;
@@ -99,20 +113,20 @@
   }
 
   &__field:focus-within &__form-input {
-    border-color: var(--second-color);
+    border-color: $second-color;
     outline: none;
   }
 
   &__field:hover &__form-input {
-    border-color: var(--second-color);
+    border-color: $second-color;
     outline: none;
   }
   &__field:hover &__icon {
-    fill: var(--second-color);
+    fill: $second-color;
   }
 
   &__field:focus-within &__icon {
-    fill: var(--second-color);
+    fill: $second-color;
   }
 
   .modal__comment-input {
@@ -130,7 +144,7 @@
 
   &__field &__comment-input:hover,
   &__field &__comment-input:focus {
-    border-color: var(--second-color);
+    border-color: $second-color;
     outline: none;
   }
 
@@ -139,7 +153,7 @@
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
-    color: var(--fourth-color);
+    color: $fourth-color;
     margin-bottom: 30px;
     margin-left: 14px;
     padding-left: 7px;
@@ -151,7 +165,7 @@
   &__check-icon {
     visibility: hidden;
     display: block;
-    fill: var(--tenth-color);
+    fill: $tenth-color;
   }
 
   &__border-checkbox {
@@ -160,14 +174,14 @@
     left: 0;
     width: 16px;
     height: 15px;
-    border: 2px solid var(--first-color);
+    border: 2px solid $first-color;
     border-radius: 2px;
     margin-right: 7px;
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__form-statement-checkbox:checked + .modal__border-checkbox {
-    background-color: var(--second-color);
+    background-color: $second-color;
     border: none;
     outline: none;
   }
@@ -178,6 +192,6 @@
 
   &__rule-link {
     text-decoration-line: underline;
-    color: var(--second-color);
+    color:$second-color;
   }
 }
