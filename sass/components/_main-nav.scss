@@ -22,9 +22,8 @@
     &--underline {
       position: relative;
       color: $second-color;
-    }
-
-    &--underline::after {
+    
+      &::after {
       content: '';
       position: absolute;
       display: block;
@@ -34,10 +33,10 @@
       background-color: $second-color;
       border-radius: 2px;
     }
-
-    &:hover,
-    &:focus {
+      &:hover,
+      &:focus {
       color: $second-color;
     }
   }
+}
 }
